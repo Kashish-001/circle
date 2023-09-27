@@ -1,1 +1,44 @@
+body, html {
+    background: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.card {
+    background: url(https://images.pexels.com/photos/6273459/pexels-photo-6273459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background: #ffffffec;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    width: 100%;
+    max-width: 125px;
+    padding: 75px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: move;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: hue 5s alternate infinite;
+    background: linear-gradient(135deg, #FFE000 10%, #799F0C 100%);
+}
+
+@keyframes hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
